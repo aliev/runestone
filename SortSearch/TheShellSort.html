@@ -4,9 +4,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
+
     <title>Сортировка Шелла &mdash; Problem Solving with Algorithms and Data Structures</title>
-    
+
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="../_static/runestone-custom-sphinx-bootstrap.css" type="text/css" />
-    
+
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
@@ -61,7 +61,7 @@
     <script type="text/javascript" src="../_static/lib/lis.js"></script>
     <script type="text/javascript" src="../_static/parsons.js"></script>
     <script type="text/javascript" src="../_static/parsons-noconflict.js"></script>
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
     <script type="text/javascript" src="../_static/jquery-fix.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
@@ -183,9 +183,9 @@
             <i class="glyphicon glyphicon-search" style='opacity:0.9;'></i>
           </a>
           <ul class='dropdown-menu'>
-            
+
                 <li><a href='../index.html'>Table of Contents</a></li>
-            
+
             <li><a href='/runestone/static/pythonds/genindex.html'>Book Index</a></li>
             <li class="divider"></li>
             <li id="scratch_ac_link"><a href="javascript:toggleScratchActivecode()">Scratch ActiveCode</a></li>
@@ -266,15 +266,15 @@
 </ul>
 </li>
           <li class="divider-vertical"></li>
-        
-        
-          
+
+
+
   <li id="relations-prev" title="Previous Chapter - Сортировка вставками" data-toggle="tooltip">
     <a href="TheInsertionSort.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
   </li>
-  
+
   <li id="relations-next" title='Next Chapter - Сортировка слиянием' data-toggle="tooltip" >
     <a href="TheMergeSort.html" >
       <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
@@ -292,9 +292,9 @@
   $('#relations-next').tooltip(opts);
 </script>
         -->
-        
+
           <li></li>
-        
+
       </ul>
 
     </div>
@@ -305,7 +305,7 @@
 <div class="container" id="continue-reading"></div>
 
 <div class="container" id="main-content">
-  
+
   <div class="section" id="id1">
 <h1>Сортировка Шелла<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <p><strong>Сортировку Шелла</strong> иногда называют &#8220;сортировкой с уменьшением инкремента&#8221;. Она улучшает сортировку вставками, разбивая первоначальный список на несколько подсписков, каждый из которых сортируется по отдельности. Оригинальный способ выбора таких подсписков - ключевая идея сортировки Шелла. Вместо того, чтобы выделять подсписки из стоящих рядом элементов, сортировка Шелла использует инкремент <tt class="docutils literal"><span class="pre">i</span></tt> (<strong>приращение</strong>), чтобы создавать подсписки из значений, отстоящих на расстоянии <tt class="docutils literal"><span class="pre">i</span></tt> друг от друга.</p>
@@ -380,7 +380,7 @@ print(alist)
 <pre id="lst_shellSort_suffix" style="display:none">
 </pre><pre id="lst_shellSort_pre" class="active_out"></pre>
 
-</div> <!-- end output --> 
+</div> <!-- end output -->
 <div class="clearfix"></div>
 <p class="ac_caption"><span class="ac_caption_text">Сортировка Шелла (lst_shellSort)</span> </p>
 <div id="lst_shellSort_codelens_div" style="display:none"></div>
@@ -416,7 +416,7 @@ if ($("#lst_shellSort").attr("lang") !== "html" && $("#lst_shellSort_code_div").
 				runit('lst_shellSort',this, undefined);
 			});
 		})
-		
+
 	});
 }
 else{
@@ -500,16 +500,16 @@ $(window).resize(function() {
             Q-64: Дан следующий список чисел: [5, 16, 20, 12, 3, 8, 9, 17, 19, 7]. Который из ответов иллюстрирует содержимое списка после всех перестановок для приращения 3?<form name="question_sort_4_form" method="get" action="" onsubmit="return false;">
             <input type="radio" name="group1" value="a" id="question_sort_4_opt_a" />
             <label for= "question_sort_4_opt_a">  a) [5, 3, 8, 7, 16, 19, 9, 17, 20, 12]</label><br />
-            
+
             <input type="radio" name="group1" value="b" id="question_sort_4_opt_b" />
             <label for= "question_sort_4_opt_b">  b) [3, 7, 5, 8, 9, 12, 19, 16, 20, 17]</label><br />
-            
+
             <input type="radio" name="group1" value="c" id="question_sort_4_opt_c" />
             <label for= "question_sort_4_opt_c">  c) [3, 5, 7, 8, 9, 12, 16, 17, 19, 20]</label><br />
-            
+
             <input type="radio" name="group1" value="d" id="question_sort_4_opt_d" />
             <label for= "question_sort_4_opt_d">  d) [5, 16, 20, 3, 8, 12, 9, 17, 20, 7]</label><br />
-            
+
 
             <script>
             $(document).ready(function(){checkRadio('question_sort_4');});
@@ -525,7 +525,7 @@ $(window).resize(function() {
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = 'alialiev';
-    
+
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -537,15 +537,15 @@ $(window).resize(function() {
 </div>
 
 
-  
-      
+
+
   <li id="relations-prev" class="navLink" title='Previous Section - Сортировка вставками' data-toggle="tooltip">
     <a href="TheInsertionSort.html" >
       <i class='prevNav glyphicon glyphicon-chevron-left'></i>
     </a>
   </li>
   <a class="navLinkBg" id="navLinkBgLeft"  href="TheInsertionSort.html" ></a>
-  
+
   <li id="relations-next" class="navLink" title='Next Section - Сортировка слиянием' data-toggle="tooltip" >
     <a href="TheMergeSort.html" >
       <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right'></i>
@@ -557,15 +557,15 @@ $(window).resize(function() {
 
   $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
   $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
-  
+
 </script>
-  
+
 </div>
 <footer class="footer">
   <div class="container">
     <p class="pull-right">
       <span id='numuserspan'></span> readers online now | <span class='loggedinuser'></span> | <a href="#">Back to top</a>
-      
+
     </p>
     <p>
         &copy; Copyright 2014 Brad Miller, David Ranum.

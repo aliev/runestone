@@ -4,9 +4,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
+
     <title>Анализ задачи о ходе коня &mdash; Problem Solving with Algorithms and Data Structures</title>
-    
+
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="../_static/runestone-custom-sphinx-bootstrap.css" type="text/css" />
-    
+
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
@@ -61,7 +61,7 @@
     <script type="text/javascript" src="../_static/lib/lis.js"></script>
     <script type="text/javascript" src="../_static/parsons.js"></script>
     <script type="text/javascript" src="../_static/parsons-noconflict.js"></script>
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
     <script type="text/javascript" src="../_static/jquery-fix.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
@@ -183,9 +183,9 @@
             <i class="glyphicon glyphicon-search" style='opacity:0.9;'></i>
           </a>
           <ul class='dropdown-menu'>
-            
+
                 <li><a href='../index.html'>Table of Contents</a></li>
-            
+
             <li><a href='/runestone/static/pythonds/genindex.html'>Book Index</a></li>
             <li class="divider"></li>
             <li id="scratch_ac_link"><a href="javascript:toggleScratchActivecode()">Scratch ActiveCode</a></li>
@@ -266,15 +266,15 @@
 </ul>
 </li>
           <li class="divider-vertical"></li>
-        
-        
-          
+
+
+
   <li id="relations-prev" title="Previous Chapter - Решение задачи о ходе коня" data-toggle="tooltip">
     <a href="ImplementingKnightsTour.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
   </li>
-  
+
   <li id="relations-next" title='Next Chapter - Поиск в глубину: общий случай' data-toggle="tooltip" >
     <a href="GeneralDepthFirstSearch.html" >
       <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
@@ -292,9 +292,9 @@
   $('#relations-next').tooltip(opts);
 </script>
         -->
-        
+
           <li></li>
-        
+
       </ul>
 
     </div>
@@ -305,7 +305,7 @@
 <div class="container" id="continue-reading"></div>
 
 <div class="container" id="main-content">
-  
+
   <div class="section" id="id1">
 <h1>Анализ задачи о ходе коня<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <p>Это последняя тема, посвящённая задаче о ходе коня; далее мы перейдём к общей версии поиска в глубину. Здесь же поговорим о производительности. В частности, <tt class="docutils literal"><span class="pre">knightTour</span></tt> очень чувствителен к способу, которым вы выбираете следующую вершину для посещения. Например, для доски пять на пять на достаточно быстром компьютере можно проложить путь за время около 1,5 секунд. Но что произойдёт, если взять доску восемь на восемь? В этом случае (в зависимости от скорости компьютера) вы можете до получаса прождать получение результата! Причина этого в том, что наша реализация задачи - экспоненциальный алгоритм размером <span class="math">\(O(k^N)\)</span>, где N - число клеток на доске, а k - какая-то малая константа. <a class="reference internal" href="#fig-8array"><em>Рисунок 12</em></a> поможет визуализировать причину, по которой так происходит. Корень дерева представляет начальную точку поиска. Из неё алгоритм генерирует и проверяет каждый из возможных ходов, которые может сделать конь. Как мы заметили ранее, число их может зависеть от позиции фигуры на доске. В углах у неё есть только два возможных хода, в клетках, смежных с угловыми, - три, а в середине доски - восемь. Количество возможных ходов для каждой позиции на доске показано на <a class="reference internal" href="#fig-nummoves"><em>рисунке 13</em></a>. На следующем уровне дерева из исследуемого положения вновь существует от двух до восьми возможных ходов. Число позиций для исследования связано с количеством узлов в дереве поиска.</p>
@@ -348,7 +348,7 @@
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = 'alialiev';
-    
+
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -360,15 +360,15 @@
 </div>
 
 
-  
-      
+
+
   <li id="relations-prev" class="navLink" title='Previous Section - Решение задачи о ходе коня' data-toggle="tooltip">
     <a href="ImplementingKnightsTour.html" >
       <i class='prevNav glyphicon glyphicon-chevron-left'></i>
     </a>
   </li>
   <a class="navLinkBg" id="navLinkBgLeft"  href="ImplementingKnightsTour.html" ></a>
-  
+
   <li id="relations-next" class="navLink" title='Next Section - Поиск в глубину: общий случай' data-toggle="tooltip" >
     <a href="GeneralDepthFirstSearch.html" >
       <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right'></i>
@@ -380,15 +380,15 @@
 
   $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
   $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
-  
+
 </script>
-  
+
 </div>
 <footer class="footer">
   <div class="container">
     <p class="pull-right">
       <span id='numuserspan'></span> readers online now | <span class='loggedinuser'></span> | <a href="#">Back to top</a>
-      
+
     </p>
     <p>
         &copy; Copyright 2014 Brad Miller, David Ranum.

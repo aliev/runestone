@@ -4,9 +4,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
+
     <title>Реализация АВЛ-дерева &mdash; Problem Solving with Algorithms and Data Structures</title>
-    
+
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="../_static/runestone-custom-sphinx-bootstrap.css" type="text/css" />
-    
+
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
@@ -61,7 +61,7 @@
     <script type="text/javascript" src="../_static/lib/lis.js"></script>
     <script type="text/javascript" src="../_static/parsons.js"></script>
     <script type="text/javascript" src="../_static/parsons-noconflict.js"></script>
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
     <script type="text/javascript" src="../_static/jquery-fix.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
@@ -183,9 +183,9 @@
             <i class="glyphicon glyphicon-search" style='opacity:0.9;'></i>
           </a>
           <ul class='dropdown-menu'>
-            
+
                 <li><a href='../index.html'>Table of Contents</a></li>
-            
+
             <li><a href='/runestone/static/pythonds/genindex.html'>Book Index</a></li>
             <li class="divider"></li>
             <li id="scratch_ac_link"><a href="javascript:toggleScratchActivecode()">Scratch ActiveCode</a></li>
@@ -266,15 +266,15 @@
 </ul>
 </li>
           <li class="divider-vertical"></li>
-        
-        
-          
+
+
+
   <li id="relations-prev" title="Previous Chapter - Производительность АВЛ-дерева" data-toggle="tooltip">
     <a href="AVLTreePerformance.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
   </li>
-  
+
   <li id="relations-next" title='Next Chapter - Заключение по реализациям АТД <tt class="docutils literal"><span class="pre">Map</span></tt>' data-toggle="tooltip" >
     <a href="SummaryofMapADTImplementations.html" >
       <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
@@ -292,9 +292,9 @@
   $('#relations-next').tooltip(opts);
 </script>
         -->
-        
+
           <li></li>
-        
+
       </ul>
 
     </div>
@@ -305,7 +305,7 @@
 <div class="container" id="continue-reading"></div>
 
 <div class="container" id="main-content">
-  
+
   <div class="section" id="id1">
 <h1>Реализация АВЛ-дерева<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <p>Теперь, когда мы показали, что поддержка баланса АВЛ-дерева даёт огромное улучшение производительности, давайте посмотрим, как можно расширить процедуру вставки в дерево нового ключа. Поскольку все ключи вставляются, как листья, и известно, что фактор сбалансированности нового листа равен нулю, то к свежевставленному узлу никаких дополнительных требваний не предъявляется. Однако, если добавлен новый лист, то надо обновить фактор сбалансированности его родителя. То, как вставленный узел на него повлияет, зависит от того, является он левым или правым потомком. Если лист - правый потомок, то фактор баланса уменьшится на единицу, если левый - то увеличится на один. Это отношение может быть рекурсивно применено к деду нового узла и, вполне возможно, к каждому из его предков вплоть до корня дерева. Поскольку это рекурсивная процедура, то давайте рассмотрим два базовых случая для обновления фактора сбалансированности:</p>
@@ -475,7 +475,7 @@ newBal(B) = oldBal(B) + 1 - min(0 , oldBal(D)) \\\end{split}\]</div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = 'alialiev';
-    
+
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -487,15 +487,15 @@ newBal(B) = oldBal(B) + 1 - min(0 , oldBal(D)) \\\end{split}\]</div>
 </div>
 
 
-  
-      
+
+
   <li id="relations-prev" class="navLink" title='Previous Section - Производительность АВЛ-дерева' data-toggle="tooltip">
     <a href="AVLTreePerformance.html" >
       <i class='prevNav glyphicon glyphicon-chevron-left'></i>
     </a>
   </li>
   <a class="navLinkBg" id="navLinkBgLeft"  href="AVLTreePerformance.html" ></a>
-  
+
   <li id="relations-next" class="navLink" title='Next Section - Заключение по реализациям АТД <tt class="docutils literal"><span class="pre">Map</span></tt>' data-toggle="tooltip" >
     <a href="SummaryofMapADTImplementations.html" >
       <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right'></i>
@@ -507,15 +507,15 @@ newBal(B) = oldBal(B) + 1 - min(0 , oldBal(D)) \\\end{split}\]</div>
 
   $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
   $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
-  
+
 </script>
-  
+
 </div>
 <footer class="footer">
   <div class="container">
     <p class="pull-right">
       <span id='numuserspan'></span> readers online now | <span class='loggedinuser'></span> | <a href="#">Back to top</a>
-      
+
     </p>
     <p>
         &copy; Copyright 2014 Brad Miller, David Ranum.

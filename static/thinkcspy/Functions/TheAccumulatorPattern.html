@@ -4,9 +4,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
+
     <title>The Accumulator Pattern &mdash; How to Think like a Computer Scientist: Interactive Edition</title>
-    
+
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="../_static/runestone-custom-sphinx-bootstrap.css" type="text/css" />
-    
+
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
@@ -61,7 +61,7 @@
     <script type="text/javascript" src="../_static/lib/lis.js"></script>
     <script type="text/javascript" src="../_static/parsons.js"></script>
     <script type="text/javascript" src="../_static/parsons-noconflict.js"></script>
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
     <script type="text/javascript" src="../_static/jquery-fix.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
@@ -183,9 +183,9 @@
             <i class="glyphicon glyphicon-search" style='opacity:0.9;'></i>
           </a>
           <ul class='dropdown-menu'>
-            
+
                 <li><a href='../toc.html'>Table of Contents</a></li>
-            
+
             <li><a href='/runestone/static/thinkcspy/genindex.html'>Book Index</a></li>
             <li class="divider"></li>
             <li id="scratch_ac_link"><a href="javascript:toggleScratchActivecode()">Scratch ActiveCode</a></li>
@@ -266,15 +266,15 @@
 </ul>
 </li>
           <li class="divider-vertical"></li>
-        
-        
-          
+
+
+
   <li id="relations-prev" title="Previous Chapter - Variables and Parameters are Local" data-toggle="tooltip">
     <a href="Variablesandparametersarelocal.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
   </li>
-  
+
   <li id="relations-next" title='Next Chapter - Functions can Call Other Functions' data-toggle="tooltip" >
     <a href="Functionscancallotherfunctions.html" >
       <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
@@ -292,9 +292,9 @@
   $('#relations-next').tooltip(opts);
 </script>
         -->
-        
+
           <li></li>
-        
+
       </ul>
 
     </div>
@@ -305,7 +305,7 @@
 <div class="container" id="continue-reading"></div>
 
 <div class="container" id="main-content">
-  
+
   <div class="section" id="the-accumulator-pattern">
 <h1>The Accumulator Pattern<a class="headerlink" href="#the-accumulator-pattern" title="Permalink to this headline">¶</a></h1>
 <div id="function_accumulator_pattern" class="video_popup" >
@@ -383,7 +383,7 @@ print("The result of", toSquare, "squared is", squareResult)
 <pre id="sq_accum1_suffix" style="display:none">
 </pre><pre id="sq_accum1_pre" class="active_out"></pre>
 
-</div> <!-- end output --> 
+</div> <!-- end output -->
 <div class="clearfix"></div>
 <p class="ac_caption"><span class="ac_caption_text"> (sq_accum1)</span> </p>
 <div id="sq_accum1_codelens_div" style="display:none"></div>
@@ -419,7 +419,7 @@ if ($("#sq_accum1").attr("lang") !== "html" && $("#sq_accum1_code_div").parents(
 				runit('sq_accum1',this, undefined);
 			});
 		})
-		
+
 	});
 }
 else{
@@ -509,7 +509,7 @@ $(window).resize(function() {
 <pre id="scratch_05_04_suffix" style="display:none">
 </pre><pre id="scratch_05_04_pre" class="active_out"></pre>
 
-</div> <!-- end output --> 
+</div> <!-- end output -->
 <div class="clearfix"></div>
 <p class="ac_caption"><span class="ac_caption_text"> (scratch_05_04)</span> </p>
 <div id="scratch_05_04_codelens_div" style="display:none"></div>
@@ -545,7 +545,7 @@ if ($("#scratch_05_04").attr("lang") !== "html" && $("#scratch_05_04_code_div").
 				runit('scratch_05_04',this, undefined);
 			});
 		})
-		
+
 	});
 }
 else{
@@ -577,16 +577,16 @@ instruction in the loop?</p>
 <form name="test_question5_4_1_form" method="get" action="" onsubmit="return false;">
             <input type="radio" name="group1" value="a" id="test_question5_4_1_opt_a" />
             <label for= "test_question5_4_1_opt_a">  a) The square function will return x instead of x * x</label><br />
-            
+
             <input type="radio" name="group1" value="b" id="test_question5_4_1_opt_b" />
             <label for= "test_question5_4_1_opt_b">  b) The square function will cause an error</label><br />
-            
+
             <input type="radio" name="group1" value="c" id="test_question5_4_1_opt_c" />
             <label for= "test_question5_4_1_opt_c">  c) The square function will work as expected and return x * x</label><br />
-            
+
             <input type="radio" name="group1" value="d" id="test_question5_4_1_opt_d" />
             <label for= "test_question5_4_1_opt_d">  d) The square function will return 0 instead of x * x</label><br />
-            
+
 
             <script>
             $(document).ready(function(){checkRadio('test_question5_4_1');});
@@ -597,7 +597,7 @@ instruction in the loop?</p>
             <div id="test_question5_4_1_feedback">
             </div>
             </div>
-            
+
         <div class='parsons alert alert-warning' id="parsons-139">
         <div class="parsons-text">func-4-2: Rearrange the code statements so that the program will add up the first n odd numbers where n is provided by the user.<br /><br /></div>
         <div style="clear:left;"></div>
@@ -619,14 +619,14 @@ print(thesum)</div>
 
     <script>
         $pjQ(document).ready(function(){
-		
+
 			$("#parsons-139").not(".sortable-code").not(".parsons-controls").on("click", function(){
 				 $('html, body').animate({
 					scrollTop: ($("#parsons-139").offset().top - 50)
 				}, 700);
 			}).find(".sortable-code, .parsons-controls").click(function(e) {
 				return false;
-				});	
+				});
             var msgBox = $("#parsons-message-139");
             msgBox.hide();
 	    var displayErrors = function (fb) {
@@ -662,7 +662,7 @@ print(thesum)</div>
             trashul.css("min-width",minWidth + "px");
             sortableul.css("min-width",minWidth + "px");
         });
- 
+
 
         var pp_139 = new ParsonsWidget({
                 'sortableId': 'parsons-sortableCode-139',
@@ -673,7 +673,7 @@ print(thesum)</div>
         });
         pp_139.init($pjQ("#parsons-orig-139").text());
 	pp_139.shuffleLines();
-            
+
         if(localStorage.getItem('question5_4_1p') && localStorage.getItem('question5_4_1p-trash')) {
             try {
                 var solution = localStorage.getItem('question5_4_1p');
@@ -689,7 +689,7 @@ print(thesum)</div>
             $pjQ("#reset139").click(function(event){
               event.preventDefault();
               pp_139.shuffleLines();
-            
+
             // set min width and height
             var sortableul = $("#ul-parsons-sortableCode-139");
             var trashul = $("#ul-parsons-sortableTrash-139");
@@ -705,36 +705,36 @@ print(thesum)</div>
             sortableul.css("min-width",minWidth + "px");
               msgBox.hide();
             });
-            
+
             $pjQ("#checkMe139").click(function(event){
               event.preventDefault();
               var hash = pp_139.getHash("#ul-parsons-sortableCode-139");
               localStorage.setItem('question5_4_1p',hash);
               hash = pp_139.getHash("#ul-parsons-sortableTrash-139");
               localStorage.setItem('question5_4_1p-trash',hash);
-            
+
             pp_139.getFeedback();
             msgBox.fadeIn(100);
-            
+
             });
-            
+
         });
-            
+
 
     </script>
 
 </div>
 
 
-  
-      
+
+
   <li id="relations-prev" class="navLink" title='Previous Section - Variables and Parameters are Local' data-toggle="tooltip">
     <a href="Variablesandparametersarelocal.html" >
       <i class='prevNav glyphicon glyphicon-chevron-left'></i>
     </a>
   </li>
   <a class="navLinkBg" id="navLinkBgLeft"  href="Variablesandparametersarelocal.html" ></a>
-  
+
   <li id="relations-next" class="navLink" title='Next Section - Functions can Call Other Functions' data-toggle="tooltip" >
     <a href="Functionscancallotherfunctions.html" >
       <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right'></i>
@@ -746,15 +746,15 @@ print(thesum)</div>
 
   $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
   $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
-  
+
 </script>
-  
+
 </div>
 <footer class="footer">
   <div class="container">
     <p class="pull-right">
       <span id='numuserspan'></span> readers online now | <span class='loggedinuser'></span> | <a href="#">Back to top</a>
-      
+
     </p>
     <p>
         &copy; Copyright 2014 Brad Miller, David Ranum, Created using Runestone Interactive.

@@ -4,9 +4,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
+
     <title>Последовательный поиск &mdash; Problem Solving with Algorithms and Data Structures</title>
-    
+
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="../_static/runestone-custom-sphinx-bootstrap.css" type="text/css" />
-    
+
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
@@ -61,7 +61,7 @@
     <script type="text/javascript" src="../_static/lib/lis.js"></script>
     <script type="text/javascript" src="../_static/parsons.js"></script>
     <script type="text/javascript" src="../_static/parsons-noconflict.js"></script>
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
     <script type="text/javascript" src="../_static/jquery-fix.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
@@ -183,9 +183,9 @@
             <i class="glyphicon glyphicon-search" style='opacity:0.9;'></i>
           </a>
           <ul class='dropdown-menu'>
-            
+
                 <li><a href='../index.html'>Table of Contents</a></li>
-            
+
             <li><a href='/runestone/static/pythonds/genindex.html'>Book Index</a></li>
             <li class="divider"></li>
             <li id="scratch_ac_link"><a href="javascript:toggleScratchActivecode()">Scratch ActiveCode</a></li>
@@ -269,15 +269,15 @@
 </ul>
 </li>
           <li class="divider-vertical"></li>
-        
-        
-          
+
+
+
   <li id="relations-prev" title="Previous Chapter - Цели" data-toggle="tooltip">
     <a href="Objectives.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
   </li>
-  
+
   <li id="relations-next" title='Next Chapter - Бинарный поиск' data-toggle="tooltip" >
     <a href="TheBinarySearch.html" >
       <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
@@ -295,9 +295,9 @@
   $('#relations-next').tooltip(opts);
 </script>
         -->
-        
+
           <li></li>
-        
+
       </ul>
 
     </div>
@@ -308,7 +308,7 @@
 <div class="container" id="continue-reading"></div>
 
 <div class="container" id="main-content">
-  
+
   <div class="section" id="id1">
 <h1>Последовательный поиск<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <p>Когда элементы данных хранятся коллекцией в виде списка, мы говорим, что между ними линейные или последовательные отношения. Каждый элемент хранится на определённой позиции относительно прочих. В списках Python она задаётся индексом данного элемента. Поскольку значения индексов упорядочены, мы имеем возможность последовательно проходить по ним. Этот процесс приводит к нашей первой поисковой технике - <strong>последовательному поиску</strong>.</p>
@@ -465,16 +465,16 @@ $(window).resize(function() {
             Q-62: Предположим, вы проводите последовательный поиск в списке [15, 18, 2, 19, 18, 0, 8, 14, 19, 14]. Сколько сравнений вам понадобится, чтобы найти ключ 18?<form name="question_SRCH_1_form" method="get" action="" onsubmit="return false;">
             <input type="radio" name="group1" value="a" id="question_SRCH_1_opt_a" />
             <label for= "question_SRCH_1_opt_a">  a) 5</label><br />
-            
+
             <input type="radio" name="group1" value="b" id="question_SRCH_1_opt_b" />
             <label for= "question_SRCH_1_opt_b">  b) 10</label><br />
-            
+
             <input type="radio" name="group1" value="c" id="question_SRCH_1_opt_c" />
             <label for= "question_SRCH_1_opt_c">  c) 4</label><br />
-            
+
             <input type="radio" name="group1" value="d" id="question_SRCH_1_opt_d" />
             <label for= "question_SRCH_1_opt_d">  d) 2</label><br />
-            
+
 
             <script>
             $(document).ready(function(){checkRadio('question_SRCH_1');});
@@ -485,21 +485,21 @@ $(window).resize(function() {
             <div id="question_SRCH_1_feedback">
             </div>
             </div>
-            
+
             <div id="question_SRCH_2" class="alert alert-warning">
             Q-63:  Предположим, вы проводите последовательный поиск в упорядоченном списке [3, 5, 6, 8, 11, 12, 14, 15, 17, 18]. Сколько сравнений вам потребуется, чтобы найти ключ 13?<form name="question_SRCH_2_form" method="get" action="" onsubmit="return false;">
             <input type="radio" name="group1" value="a" id="question_SRCH_2_opt_a" />
             <label for= "question_SRCH_2_opt_a">  a) 10</label><br />
-            
+
             <input type="radio" name="group1" value="b" id="question_SRCH_2_opt_b" />
             <label for= "question_SRCH_2_opt_b">  b) 5</label><br />
-            
+
             <input type="radio" name="group1" value="c" id="question_SRCH_2_opt_c" />
             <label for= "question_SRCH_2_opt_c">  c) 7</label><br />
-            
+
             <input type="radio" name="group1" value="d" id="question_SRCH_2_opt_d" />
             <label for= "question_SRCH_2_opt_d">  d) 6</label><br />
-            
+
 
             <script>
             $(document).ready(function(){checkRadio('question_SRCH_2');});
@@ -515,7 +515,7 @@ $(window).resize(function() {
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = 'alialiev';
-    
+
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -528,15 +528,15 @@ $(window).resize(function() {
 </div>
 
 
-  
-      
+
+
   <li id="relations-prev" class="navLink" title='Previous Section - Цели' data-toggle="tooltip">
     <a href="Objectives.html" >
       <i class='prevNav glyphicon glyphicon-chevron-left'></i>
     </a>
   </li>
   <a class="navLinkBg" id="navLinkBgLeft"  href="Objectives.html" ></a>
-  
+
   <li id="relations-next" class="navLink" title='Next Section - Бинарный поиск' data-toggle="tooltip" >
     <a href="TheBinarySearch.html" >
       <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right'></i>
@@ -548,15 +548,15 @@ $(window).resize(function() {
 
   $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
   $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
-  
+
 </script>
-  
+
 </div>
 <footer class="footer">
   <div class="container">
     <p class="pull-right">
       <span id='numuserspan'></span> readers online now | <span class='loggedinuser'></span> | <a href="#">Back to top</a>
-      
+
     </p>
     <p>
         &copy; Copyright 2014 Brad Miller, David Ranum.

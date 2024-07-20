@@ -4,9 +4,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
+
     <title>Пузырьковая сортировка &mdash; Problem Solving with Algorithms and Data Structures</title>
-    
+
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="../_static/runestone-custom-sphinx-bootstrap.css" type="text/css" />
-    
+
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
@@ -61,7 +61,7 @@
     <script type="text/javascript" src="../_static/lib/lis.js"></script>
     <script type="text/javascript" src="../_static/parsons.js"></script>
     <script type="text/javascript" src="../_static/parsons-noconflict.js"></script>
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
     <script type="text/javascript" src="../_static/jquery-fix.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
@@ -183,9 +183,9 @@
             <i class="glyphicon glyphicon-search" style='opacity:0.9;'></i>
           </a>
           <ul class='dropdown-menu'>
-            
+
                 <li><a href='../index.html'>Table of Contents</a></li>
-            
+
             <li><a href='/runestone/static/pythonds/genindex.html'>Book Index</a></li>
             <li class="divider"></li>
             <li id="scratch_ac_link"><a href="javascript:toggleScratchActivecode()">Scratch ActiveCode</a></li>
@@ -266,15 +266,15 @@
 </ul>
 </li>
           <li class="divider-vertical"></li>
-        
-        
-          
+
+
+
   <li id="relations-prev" title="Previous Chapter - Хэширование" data-toggle="tooltip">
     <a href="Hashing.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
   </li>
-  
+
   <li id="relations-next" title='Next Chapter - Сортировка выбором' data-toggle="tooltip" >
     <a href="TheSelectionSort.html" >
       <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
@@ -292,9 +292,9 @@
   $('#relations-next').tooltip(opts);
 </script>
         -->
-        
+
           <li></li>
-        
+
       </ul>
 
     </div>
@@ -305,7 +305,7 @@
 <div class="container" id="continue-reading"></div>
 
 <div class="container" id="main-content">
-  
+
   <div class="section" id="id1">
 <h1>Пузырьковая сортировка<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <p><strong>Пузырьковая сортировка</strong> делает по списку несколько проходов. Она сравнивает стоящие рядом элементы и меняет местами те из них, что находятся в неправильном порядке. Каждый проход по списку помещает следующее наибольшее значение на его правильную позицию. В сущности, каждый элемент &#8220;пузырьком&#8221; всплывает на своё место.</p>
@@ -364,7 +364,7 @@ print(alist)
 <pre id="lst_bubble_suffix" style="display:none">
 </pre><pre id="lst_bubble_pre" class="active_out"></pre>
 
-</div> <!-- end output --> 
+</div> <!-- end output -->
 <div class="clearfix"></div>
 <p class="ac_caption"><span class="ac_caption_text">Пузырьковая сортировка (lst_bubble)</span> </p>
 <div id="lst_bubble_codelens_div" style="display:none"></div>
@@ -400,7 +400,7 @@ if ($("#lst_bubble").attr("lang") !== "html" && $("#lst_bubble_code_div").parent
 				runit('lst_bubble',this, undefined);
 			});
 		})
-		
+
 	});
 }
 else{
@@ -547,7 +547,7 @@ print(alist)
 <pre id="lst_shortbubble_suffix" style="display:none">
 </pre><pre id="lst_shortbubble_pre" class="active_out"></pre>
 
-</div> <!-- end output --> 
+</div> <!-- end output -->
 <div class="clearfix"></div>
 <p class="ac_caption"><span class="ac_caption_text">Короткая пузырьковая сортировка (lst_shortbubble)</span> </p>
 <div id="lst_shortbubble_codelens_div" style="display:none"></div>
@@ -583,7 +583,7 @@ if ($("#lst_shortbubble").attr("lang") !== "html" && $("#lst_shortbubble_code_di
 				runit('lst_shortbubble',this, undefined);
 			});
 		})
-		
+
 	});
 }
 else{
@@ -641,16 +641,16 @@ $(window).resize(function() {
             Q-54:  Предположим, у вас есть следующий список чисел для сортировки: [19, 1, 9, 7, 3, 10, 13, 15, 8, 12]. Какой из следующих списков представляет собой частично отсортированный список после трёх проходов пузырьковой сортировки?<form name="question_sort_1_form" method="get" action="" onsubmit="return false;">
             <input type="radio" name="group1" value="a" id="question_sort_1_opt_a" />
             <label for= "question_sort_1_opt_a">  a) [1, 9, 19, 7, 3, 10, 13, 15, 8, 12]</label><br />
-            
+
             <input type="radio" name="group1" value="b" id="question_sort_1_opt_b" />
             <label for= "question_sort_1_opt_b">  b) [1, 3, 7, 9, 10, 8, 12, 13, 15, 19]</label><br />
-            
+
             <input type="radio" name="group1" value="c" id="question_sort_1_opt_c" />
             <label for= "question_sort_1_opt_c">  c) [1, 7, 3, 9, 10, 13, 8, 12, 15, 19]</label><br />
-            
+
             <input type="radio" name="group1" value="d" id="question_sort_1_opt_d" />
             <label for= "question_sort_1_opt_d">  d) [1, 9, 19, 7, 3, 10, 13, 15, 8, 12]</label><br />
-            
+
 
             <script>
             $(document).ready(function(){checkRadio('question_sort_1');});
@@ -666,7 +666,7 @@ $(window).resize(function() {
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = 'alialiev';
-    
+
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -678,15 +678,15 @@ $(window).resize(function() {
 </div>
 
 
-  
-      
+
+
   <li id="relations-prev" class="navLink" title='Previous Section - Хэширование' data-toggle="tooltip">
     <a href="Hashing.html" >
       <i class='prevNav glyphicon glyphicon-chevron-left'></i>
     </a>
   </li>
   <a class="navLinkBg" id="navLinkBgLeft"  href="Hashing.html" ></a>
-  
+
   <li id="relations-next" class="navLink" title='Next Section - Сортировка выбором' data-toggle="tooltip" >
     <a href="TheSelectionSort.html" >
       <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right'></i>
@@ -698,15 +698,15 @@ $(window).resize(function() {
 
   $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
   $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
-  
+
 </script>
-  
+
 </div>
 <footer class="footer">
   <div class="container">
     <p class="pull-right">
       <span id='numuserspan'></span> readers online now | <span class='loggedinuser'></span> | <a href="#">Back to top</a>
-      
+
     </p>
     <p>
         &copy; Copyright 2014 Brad Miller, David Ranum.

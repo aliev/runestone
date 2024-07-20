@@ -4,9 +4,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
+
     <title>A Few More turtle Methods and Observations &mdash; How to Think like a Computer Scientist: Interactive Edition</title>
-    
+
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="../_static/runestone-custom-sphinx-bootstrap.css" type="text/css" />
-    
+
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
@@ -61,7 +61,7 @@
     <script type="text/javascript" src="../_static/lib/lis.js"></script>
     <script type="text/javascript" src="../_static/parsons.js"></script>
     <script type="text/javascript" src="../_static/parsons-noconflict.js"></script>
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
     <script type="text/javascript" src="../_static/jquery-fix.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
@@ -183,9 +183,9 @@
             <i class="glyphicon glyphicon-search" style='opacity:0.9;'></i>
           </a>
           <ul class='dropdown-menu'>
-            
+
                 <li><a href='../toc.html'>Table of Contents</a></li>
-            
+
             <li><a href='/runestone/static/thinkcspy/genindex.html'>Book Index</a></li>
             <li class="divider"></li>
             <li id="scratch_ac_link"><a href="javascript:toggleScratchActivecode()">Scratch ActiveCode</a></li>
@@ -266,15 +266,15 @@
 </ul>
 </li>
           <li class="divider-vertical"></li>
-        
-        
-          
+
+
+
   <li id="relations-prev" title="Previous Chapter - The range Function" data-toggle="tooltip">
     <a href="TherangeFunction.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
   </li>
-  
+
   <li id="relations-next" title='Next Chapter - Summary of Turtle Methods' data-toggle="tooltip" >
     <a href="SummaryofTurtleMethods.html" >
       <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
@@ -292,9 +292,9 @@
   $('#relations-next').tooltip(opts);
 </script>
         -->
-        
+
           <li></li>
-        
+
       </ul>
 
     </div>
@@ -305,7 +305,7 @@
 <div class="container" id="continue-reading"></div>
 
 <div class="container" id="main-content">
-  
+
   <div class="section" id="a-few-more-turtle-methods-and-observations">
 <h1>A Few More turtle Methods and Observations<a class="headerlink" href="#a-few-more-turtle-methods-and-observations" title="Permalink to this headline">¶</a></h1>
 <p>Here are a few more things that you might find useful as you write programs that use turtles.</p>
@@ -395,7 +395,7 @@ wn.exitonclick()
 <pre id="ch03_7_suffix" style="display:none">
 </pre><pre id="ch03_7_pre" class="active_out"></pre>
 
-</div> <!-- end output --> 
+</div> <!-- end output -->
 <div class="clearfix"></div>
 <p class="ac_caption"><span class="ac_caption_text"> (ch03_7)</span> </p>
 
@@ -431,7 +431,7 @@ if ($("#ch03_7").attr("lang") !== "html" && $("#ch03_7_code_div").parents(".admo
 				runit('ch03_7',this, undefined);
 			});
 		})
-		
+
 	});
 }
 else{
@@ -479,14 +479,14 @@ wn.exitonclick()</div>
 
     <script>
         $pjQ(document).ready(function(){
-		
+
 			$("#parsons-103").not(".sortable-code").not(".parsons-controls").on("click", function(){
 				 $('html, body').animate({
 					scrollTop: ($("#parsons-103").offset().top - 50)
 				}, 700);
 			}).find(".sortable-code, .parsons-controls").click(function(e) {
 				return false;
-				});	
+				});
             var msgBox = $("#parsons-message-103");
             msgBox.hide();
 	    var displayErrors = function (fb) {
@@ -522,7 +522,7 @@ wn.exitonclick()</div>
             trashul.css("min-width",minWidth + "px");
             sortableul.css("min-width",minWidth + "px");
         });
- 
+
 
         var pp_103 = new ParsonsWidget({
                 'sortableId': 'parsons-sortableCode-103',
@@ -533,7 +533,7 @@ wn.exitonclick()</div>
         });
         pp_103.init($pjQ("#parsons-orig-103").text());
 	pp_103.shuffleLines();
-            
+
         if(localStorage.getItem('3_10') && localStorage.getItem('3_10-trash')) {
             try {
                 var solution = localStorage.getItem('3_10');
@@ -549,7 +549,7 @@ wn.exitonclick()</div>
             $pjQ("#reset103").click(function(event){
               event.preventDefault();
               pp_103.shuffleLines();
-            
+
             // set min width and height
             var sortableul = $("#ul-parsons-sortableCode-103");
             var trashul = $("#ul-parsons-sortableTrash-103");
@@ -565,21 +565,21 @@ wn.exitonclick()</div>
             sortableul.css("min-width",minWidth + "px");
               msgBox.hide();
             });
-            
+
             $pjQ("#checkMe103").click(function(event){
               event.preventDefault();
               var hash = pp_103.getHash("#ul-parsons-sortableCode-103");
               localStorage.setItem('3_10',hash);
               hash = pp_103.getHash("#ul-parsons-sortableTrash-103");
               localStorage.setItem('3_10-trash',hash);
-            
+
             pp_103.getFeedback();
             msgBox.fadeIn(100);
-            
+
             });
-            
+
         });
-            
+
 
     </script>
 
@@ -610,14 +610,14 @@ wn.exitonclick()</div>
 
     <script>
         $pjQ(document).ready(function(){
-		
+
 			$("#parsons-127").not(".sortable-code").not(".parsons-controls").on("click", function(){
 				 $('html, body').animate({
 					scrollTop: ($("#parsons-127").offset().top - 50)
 				}, 700);
 			}).find(".sortable-code, .parsons-controls").click(function(e) {
 				return false;
-				});	
+				});
             var msgBox = $("#parsons-message-127");
             msgBox.hide();
 	    var displayErrors = function (fb) {
@@ -653,7 +653,7 @@ wn.exitonclick()</div>
             trashul.css("min-width",minWidth + "px");
             sortableul.css("min-width",minWidth + "px");
         });
- 
+
 
         var pp_127 = new ParsonsWidget({
                 'sortableId': 'parsons-sortableCode-127',
@@ -664,7 +664,7 @@ wn.exitonclick()</div>
         });
         pp_127.init($pjQ("#parsons-orig-127").text());
 	pp_127.shuffleLines();
-            
+
         if(localStorage.getItem('3_11') && localStorage.getItem('3_11-trash')) {
             try {
                 var solution = localStorage.getItem('3_11');
@@ -680,7 +680,7 @@ wn.exitonclick()</div>
             $pjQ("#reset127").click(function(event){
               event.preventDefault();
               pp_127.shuffleLines();
-            
+
             // set min width and height
             var sortableul = $("#ul-parsons-sortableCode-127");
             var trashul = $("#ul-parsons-sortableTrash-127");
@@ -696,21 +696,21 @@ wn.exitonclick()</div>
             sortableul.css("min-width",minWidth + "px");
               msgBox.hide();
             });
-            
+
             $pjQ("#checkMe127").click(function(event){
               event.preventDefault();
               var hash = pp_127.getHash("#ul-parsons-sortableCode-127");
               localStorage.setItem('3_11',hash);
               hash = pp_127.getHash("#ul-parsons-sortableTrash-127");
               localStorage.setItem('3_11-trash',hash);
-            
+
             pp_127.getFeedback();
             msgBox.fadeIn(100);
-            
+
             });
-            
+
         });
-            
+
 
     </script>
 
@@ -725,15 +725,15 @@ race.</li>
 <span class="target" id="summary-of-turtle-methods"></span></div>
 
 
-  
-      
+
+
   <li id="relations-prev" class="navLink" title='Previous Section - The range Function' data-toggle="tooltip">
     <a href="TherangeFunction.html" >
       <i class='prevNav glyphicon glyphicon-chevron-left'></i>
     </a>
   </li>
   <a class="navLinkBg" id="navLinkBgLeft"  href="TherangeFunction.html" ></a>
-  
+
   <li id="relations-next" class="navLink" title='Next Section - Summary of Turtle Methods' data-toggle="tooltip" >
     <a href="SummaryofTurtleMethods.html" >
       <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right'></i>
@@ -745,15 +745,15 @@ race.</li>
 
   $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
   $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
-  
+
 </script>
-  
+
 </div>
 <footer class="footer">
   <div class="container">
     <p class="pull-right">
       <span id='numuserspan'></span> readers online now | <span class='loggedinuser'></span> | <a href="#">Back to top</a>
-      
+
     </p>
     <p>
         &copy; Copyright 2014 Brad Miller, David Ranum, Created using Runestone Interactive.
